@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  function User(name,age) {
+      this.name = name;
+      this.age = age;
+
+  }
+
+</script>
+<script>
+    // console.log(User);
+    // User.prototype.greeting = function () {
+    //     return `hello my name is ${this.name} ,I have ${this.age}`;
+    // };
+    //
+    // let user = new User(`vasua`,12);
+    // console.log(user.greeting());
+
+
+    let user = new User('vasya', 31);
+    user.greetings = qqq=> {
+        return `${qqq} Hello my name is${this.name}`;
+    };
+    console.log(user.greetings('hello'));
+    let user2 = new User('awaaawaw', 11212);
+    let greetingCopy = user.greetings.bind(user2, 'ghbdsn');
+    console.log()
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

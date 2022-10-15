@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+<script>
+    // let v1 = 3;
+    // let v2 = 3.6;
+    // let v3 = 4.2;
+    //
+    // let enginsVolume = [v1, 3.6, 4.2];
+    // console.log(enginsVolume);
+    //
+    // console.log(enginsVolume[2]);
+    // enginsVolume[3] = 4.5;
+    // console.log(enginsVolume);
+    //
+    // enginsVolume[2] = 4.8;
+    // console.log(enginsVolume);
+    //
+    // console.log(enginsVolume[100500]);
+    //
+    // enginsVolume[100] = 'ashdhsagfd';
+    // console.log(enginsVolume);
+    // console.log(enginsVolume.length);
+    // console.log(enginsVolume.length / 2);
+    // let round = Math.round(enginsVolume.length / 2);
+    // console.log(round);
+    // let floor = Math.floor(enginsVolume.length / 2);
+    // console.log(floor);
+    // enginsVolume[floor] = 'okten is cool';
+    // console.log(enginsVolume);
+
+
+    /*array in array*/
+
+
+    let music = [
+        ['coolio', '2pac', 'eminem', 'snoop dog'],
+        ['queen', 'pink floyd', 'acdc']
+    ];
+
+    console.log(music);
+
+    // rap[1] - 2pac
+    console.log(music[0][1]);
+    console.log(music[1][2]);
+
+
+    /*objects*/
+
+
+    // let user1 = {
+    //     name: 'vasya',
+    //     age: 31,
+    //     status: true
+    // };
+    // console.log(user1);
+
+    // let car = {
+    //     producer: 'porsche',
+    //     model: 'cayenne',
+    //     volume: 3.6,
+    //     turbo: false,
+    //     wheels: [
+    //         {radius: 21, producer: 'toyo', side: 'front'},
+    //         {radius: 21, producer: 'toyo', side: 'front'},
+    //         {radius: 22, producer: 'nokian', side: 'back'},
+    //         {radius: 22, producer: 'nokian', side: 'back'}
+    //     ]
+    // }
+    //
+    // console.log(car);
+    //
+    // console.log(car.model);
+    // // console.log(car['volume']);
+    // // console.log(car.volume);
+    // // console.log(car['wheels']);
+    //
+    // console.log(car.wheels);
+    // // console.log(car.wheels[0]); //21
+    // // console.log(car['wheels'][0]); //21
+    //
+    //
+    // console.log(car.wheels[0].producer);
+
+
+    // let w = [
+    //     {radius: 21, producer: 'toyo', side: 'front'},
+    //     {radius: 21, producer: 'toyo', side: 'front'},
+    //     {radius: 22, producer: 'nokian', side: 'back'},
+    //     {radius: 22, producer: 'nokian', side: 'back'}
+    // ]
+    //
+    // console.log(w[3].producer);
+    // console.log(w[3]['producer']);
+
+
+    /*reference vs primitive*/
+
+    // let x = 100;
+    // let y = x; // y = 100
+    //
+    // y = 200; // y = 200 x=100
+    // console.log(y, x);
+
+    // let arr1 = [];
+    // let arr2 = arr1;
+    //
+    // arr2[0] = 'hello';
+    // console.log(arr2);
+    // console.log(arr1);//[]
+
+
+    // let cat = {};
+    // let cat2 = cat; //{}
+    // cat2.name = 'koko';
+    // cat2['age'] = 2;
+    // console.log(cat2);
+    // console.log(cat);
+    //
+    // delete cat.age;
+    // console.log(cat);
+
+
+    const dog = {
+        aka: 'fluffy'
+    }
+
+    dog.aka = 'kokos'; // reference is not chaged
+    dog.age = 123; // reference is not chaged
+    console.log(dog); // object
+
+    // dog = {};// error!
+
+
+    let asd = "{name : 'vasya' , age : 31}";
+
+
+    console.log(JSON.stringify(dog)); // string
+
+</script>
+
+
+
+
+</body>
+</html>
